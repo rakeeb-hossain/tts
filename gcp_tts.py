@@ -1,5 +1,6 @@
 from google.cloud import texttospeech_v1beta1 as texttospeech
 
+
 def tts(out_path: str, text: str):
     client = texttospeech.TextToSpeechClient()
     synthesis_input = texttospeech.SynthesisInput(text=text)

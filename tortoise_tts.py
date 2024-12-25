@@ -2,6 +2,7 @@ from tortoise.api import TextToSpeech
 from tortoise.utils.audio import load_audio, load_voice, load_voices
 import torchaudio
 
+
 def tts(text: str, out_path: str):
     tts = TextToSpeech(use_deepspeed=True, kv_cache=True)
 
@@ -21,7 +22,12 @@ def tts(text: str, out_path: str):
     # Pick a voice
     voice = "tom"
     voice_samples, conditioning_latents = load_voice(voice)
-    gen = tts.tts_with_preset(text, voice_samples=voice_samples, conditioning_latents=conditioning_latents, preset=preset)
+    gen = tts.tts_with_preset(
+        text,
+        voice_samples=voice_samples,
+        conditioning_latents=conditioning_latents,
+        preset=preset,
+    )
 
     # Save the audio to a file
     torchaudio.save(out_path, gen.squeeze(0).cpu(), 24000)
