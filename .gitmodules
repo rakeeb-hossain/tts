@@ -5,3 +5,6 @@
 [submodule "coqui"]
 	path = coqui
 	url = git@github.com:coqui-ai/TTS.git
+[submodule "rvc"]
+	path = rvc
+	url = git@github.com:RVC-Project/Retrieval-based-Voice-Conversion-WebUI.git
