@@ -1,0 +1,4 @@
+[submodule "tortoise-tts"]
+	path = tortoise-tts
+	url = git@github.com:rakeeb-hossain/tortoise-tts.git
+	branch = rkb-tts
