@@ -2,3 +2,6 @@
 	path = tortoise-tts
 	url = git@github.com:rakeeb-hossain/tortoise-tts.git
 	branch = rkb-tts
+[submodule "coqui"]
+	path = coqui
+	url = git@github.com:coqui-ai/TTS.git
