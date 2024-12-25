@@ -139,7 +139,7 @@ tortoise-tts @ file:///Users/rakeeb/Documents/Code/tts/tortoise-tts
 tqdm==4.67.1
 trainer==0.0.36
 transformers==4.47.1
--e git+ssh://git@github.com/coqui-ai/TTS.git@dbf1a08a0d4e47fdad6172e433eeb34bc6b13b4e#egg=TTS&subdirectory=../../coqui
+TTS @ file:///Users/rakeeb/Documents/Code/tts/coqui
 typeguard==4.4.1
 typer==0.15.1
 typing_extensions==4.12.2
